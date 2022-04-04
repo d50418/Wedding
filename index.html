@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>婚禮</title>
+    <!--Bootstrap css-->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <!--自己設計的css-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--nav-->
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <!-- data-toggle="collapse"：這是用來製作動畫效果的，沒有的話，我們點「三」的時候不會有任何反應。 -->
+                <!-- data-target="#myNavbar"這裡面的mynavbar是一個CSS的id，我們可以取任意的名字，只是一定要跟下面縮放的id對應到。 -->
+                 <!-- class="navbar-toggle"：這個是關鍵字，有它才能讓我們順利的看到「三」，而且出現在視窗的右方。 -->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar" aria-expanded="false">
+                    <!-- <span class="icon-bar"></span>這段這是用來產生「一」，當有三個「一」時，合在一起就會變「三」的按鍵了。 -->
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">婚禮</a>
+            </div>
+           
+            <!-- class="collapse navbar-collapse"：這兩個也是關鍵字，幫助我們在正常視窗的情況下，可以看到原本的導覽列。 -->
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">彩妝造型</a></li>
+                    <li><a href="#">婚禮紀錄</a></li>
+                    <li><a href="#">主題攝影</a></li>
+                    <li><a href="#">婚紗禮服</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- 製作banner區 -->
+    <div class="container" id="banner">
+    </div>
+    <!-- 製作banner下方區塊 -->
+        <div class="container ">
+            <div class="row">
+                <div class="col-md-4">
+                    <ul>
+                        <li>專業的拍攝團隊</li>
+                        <li>故事感婚紗攝影</li>
+                        <li>國際時尚美容團</li>
+                    </ul>
+                </div>
+                <div class="col-md-8">
+                    <h4>穿上美麗婚紗，實現你的夢想</h4>
+                    <p>為你挑選命中注定的婚紗，見證你一生一次的結婚式。關於婚禮的大小事，我們一起分擔與實現</p>
+                </div>
+            </div>
+        </div>
+        <!-- 製作四欄版型 -->
+        <div class="container" id="item">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <img src="images/styles.jpg" class="img-responsive">
+                    <!-- 在img元素下方在新增class為desc的div元素 -->
+                    <div class="desc">
+                        <h3>彩妝造型</h3>
+                        <p>典雅的造型</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <img src="images/record.jpg" class="img-responsive">
+                    <!-- 在img元素下方在新增class為desc的div元素 -->
+                    <div class="desc">
+                        <h3>婚禮紀錄</h3>
+                        <p>紀錄婚禮的狀況</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <img src="images/photo.jpg" class="img-responsive">
+                    <!-- 在img元素下方在新增class為desc的div元素 -->
+                    <div class="desc">
+                        <h3>主題攝影</h3>
+                        <p>紀錄一生最美麗的時刻</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <img src="images/dress.jpg" class="img-responsive">
+                    <!-- 在img元素下方在新增class為desc的div元素 -->
+                    <div class="desc">
+                        <h3>婚紗禮服</h3>
+                        <p>嚴選各式婚紗</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 製作footer區 -->
+        <!-- text-center類別為Bootstrap內建的類別，可設定元素的文字內容為水平置中 -->
+        <footer class="text-center">
+            Copyright © 2021 All Rights Reserved. Designed by Alan.
+        </footer>
+    
+
+    <!-- 匯入jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- 匯入bootstrap javascript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</body>
+</html>

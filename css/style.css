@@ -1,0 +1,126 @@
+/* 將body元素內的文字接設定為微軟正黑體，文字顏色設定為灰色 */
+body{
+    font-family: Microsoft Jhenhei;
+    color: #777;
+   
+}
+
+/* 設定navbar樣式 */
+
+/* navbar-default類別是Bootstrap內建的類別。在Bootstrap將navbar-default類別設定為灰色邊框與灰色背景。
+在此，我們希望導覽列是白色邊框與白色背景 */
+.navbar-default{
+    background-color: #fff;
+    border-color: #fff;
+}
+.navbar{
+    padding-top: 25px;
+}
+
+/* 將品牌名稱設為粗體 */
+.navbar-brand{
+    color: #189ADE;
+    font-size: 30px;
+    font-weight: bold;
+}
+.navbar-brand a{
+    color: #444;
+    font-weight: bold;
+} 
+
+/* 設定banner樣式 */
+
+/* height屬性用來設定banner的高度 */
+
+/* background-position用來設定背景圖片的位置。可以設定兩個值，第一個可選的值有top，bottom，center ，
+第二個可選的值有left，right，center ，我們設定background-position: center center，設在正中間*/
+
+/* background-size屬性用於設定背景圖片大小，可選的值包含cover與contain。cover用於圖片小於容器的大小時，
+可使背景圖片放大至滿足容器的大小，而contain則相反，contain用於圖片大於容器的大小時，
+可使背景圖片縮小至滿足容器的大小 */
+
+#banner{
+    height: 350px;
+    background-image: url(/images/banner.jpg);
+    background-position: center center;
+    background-size: contain;
+    margin-bottom: 30px;
+}
+
+/* 設定col-md-4與其元素內li元素樣式 */
+/* 設定col-md-4與其元素內li元素上下內距10px，左右內距0px */
+.col-md-4{
+    padding: 10px 0px;
+    background-color: #a2a2a2;
+    color: #fff;
+}
+.col-md-4 li{
+    margin-bottom: 10px;
+}
+
+/* line-height屬性用於設定文字的行高，即為設定每行文字之間的間距 */
+/* text-align屬性用於設定文字的對齊方式，其屬性包含left，right，center，justify。我們設定為justify，能使文字於元素中左右對齊 */
+.col-md-8{
+    font-weight: bold;
+}
+.col-md-8 p{
+    line-height: 25px;
+    text-align: justify;
+}
+
+/* 設定class="container" id="item"的這個div區塊 */
+#item{
+    margin-top: 30px;
+}
+
+/* 設定邊框樣式，顏色灰色，實線，寬度1px */
+.desc{
+   padding: 10px 5px;
+   border:#b3b3b3 solid 1px;
+} 
+
+/* 設定footer樣式 */
+footer{
+    background-color: #333333;
+    padding: 30px 0px;
+    color: #ccc;
+    margin-top: 50px;
+}
+
+/* 撰寫Media Queries */
+/* 為了使網頁在寬度小於等991px時更加美麗，因使我們設定當視窗的最大寬度為991px時， */
+/* footer的上外距(margin-top)將會增加30px的間隙，col-md-3的下外距將會增加30px的間隙 */
+
+@media screen and (max-width : 991px) {
+    .col-md-8,
+    footer{
+        margin-top: 30px;
+    }
+    .col-md-3{
+        margin-top: 30px;
+    }
+}
+
+/* 新增navbar類別在視窗寬度<=768px時的樣式 */
+
+@media screen and (max-width : 768px) {
+    .navbar{
+        padding-top: 0px;
+    }
+}
+
+/* 希望在視窗寬度小於或等於640px時，col-md-4及col-md-8的左右兩邊留有些許間隔， */
+/* 因此設定寬度為90%，並設定margin:0px auto，使它們於視窗內水平置中 */
+
+@media screen and (max-width : 991px) {
+    .col-md-4{
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .col-md-8{
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 15px;
+    }
+}
